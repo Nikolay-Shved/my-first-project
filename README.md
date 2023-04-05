@@ -3,3 +3,5 @@
 
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/83e158949d998ac5fd1e/maintainability)](https://codeclimate.com/github/Nikolay-Shved/python-project-49/maintainability)
+
+[asciinema]https://asciinema.org/a/1H1vC9vqzIIWulAbaQNT9aCFw
