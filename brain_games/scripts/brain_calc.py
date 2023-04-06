@@ -16,12 +16,6 @@ def main():
         num2 = random.randint(1, 100)
         num3 = choice(operation)
         print(f'Question: {num1} {num3} {num2}')
-        if num3 == '+':
-            result = num1 + num2
-        elif num3 == '-':
-            result = num1 - num2
-        else:
-            result = num1 * num2
 
         answer = prompt.string('Your answer: ')
 
