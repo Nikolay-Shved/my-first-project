@@ -11,7 +11,7 @@ def main():
 
     i = 0
     while i < 3:
-        operation = ['+', '-', '*']
+        operation = ('+-*')
         num1 = random.randint(1, 100)
         num2 = random.randint(1, 100)
         num3 = choice(operation)
