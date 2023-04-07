@@ -1,11 +1,10 @@
 import random
 import prompt
+from brain_games.games.logic import congrats
+from brain_games.games.logic import greet
 
 
-def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+def even_game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     i = 0
@@ -22,15 +21,10 @@ def main():
         if answer == result:
             print('Correct!')
             i += 1
-
         else:
             print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
             break
+        
 
-    if i == 3:
-        print(f'Congratulations, {name}!')
+    print(congrats(name, i))
 
-
-if __name__ == '__main__':
-    main()
