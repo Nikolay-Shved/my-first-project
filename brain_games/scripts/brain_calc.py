@@ -1,5 +1,5 @@
-import random
 import prompt
+import random
 from random import choice
 
 
@@ -7,7 +7,7 @@ def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print('What is the result of the expression?.')
+    print('What is the result of the expression?')
 
     i = 0
     while i < 3:
@@ -23,7 +23,7 @@ def main():
             print('Correct!')
             i += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {result}.")
+            print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
             break
 
