@@ -5,4 +5,4 @@
 
 First game [![asciinema](https://asciinema.org/~NikolayShved)](https://asciinema.org/a/1H1vC9vqzIIWulAbaQNT9aCFw)
 
-Third game [![asciinema](https://asciinema.org/~NikolayShved)](https://asciinema.org/a/e23azgMYetvNGlbt95UyOzR9o)
+Third game [![asciinema]](https://asciinema.org/a/e23azgMYetvNGlbt95UyOzR9o)
