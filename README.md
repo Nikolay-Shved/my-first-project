@@ -5,4 +5,6 @@
 
 First game [asciinema](https://asciinema.org/a/1H1vC9vqzIIWulAbaQNT9aCFw)
 
+Second game [asciinema](https://asciinema.org/a/ogbc6FcRcF9DseDvDLFhTRIbE)
+
 Third game [asciinema](https://asciinema.org/a/e23azgMYetvNGlbt95UyOzR9o)

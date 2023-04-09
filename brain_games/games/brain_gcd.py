@@ -1,12 +1,9 @@
-import prompt
 import random
 import math
+from brain_games.games.logic import congrats
 
 
-def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+def gcd_game(name):
     print('Find the greatest common divisor of given numbers.')
 
     i = 0
@@ -15,7 +12,7 @@ def main():
         num2 = random.randint(1, 100)
         print(f'Question: {num1} {num2}')
 
-        answer = prompt.string('Your answer: ')
+        answer = input('Your answer: ')
 
         result = math.gcd(num1, num2)
         if int(result) == int(answer):
@@ -25,9 +22,5 @@ def main():
             print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
             break
-    if i == 3:
-        print(f'Congratulations, {name}!')
 
-
-if __name__ == '__main__':
-    main()
+    print(congrats(name, i))

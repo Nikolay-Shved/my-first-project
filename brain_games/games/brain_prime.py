@@ -2,17 +2,18 @@ import random
 from brain_games.games.logic import congrats
 
 
-def even_game(name):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def prime_game(name):
 
     i = 0
     while i < 3:
         num = random.randint(1, 100)
-        print(f'Questions: {num}')
-        if num % 2 == 0:
-            result = 'yes'
-        else:
-            result = 'no'
+
+        for x in range(2, (num//2)+1):
+            if num % x == 0:
+                result = 'yes'
+        result = 'no'
+
+        print(f'Question: {num}')
 
         answer = input('Your answer: ')
 

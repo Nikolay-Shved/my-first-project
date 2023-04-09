@@ -1,12 +1,9 @@
-import prompt
 import random
 from random import choice
+from brain_games.games.logic import congrats
 
 
-def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+def calc_game(name):
     print('What is the result of the expression?')
 
     i = 0
@@ -17,7 +14,14 @@ def main():
         num3 = choice(operation)
         print(f'Question: {num1} {num3} {num2}')
 
-        answer = prompt.string('Your answer: ')
+        if num3 == '+':
+            result = num1 + num2
+        elif num3 == '-':
+            result = num1 - num2
+        else:
+            result = num1 * num2
+
+        answer = input('Your answer: ')
 
         if int(answer) == int(result):
             print('Correct!')
@@ -27,9 +31,4 @@ def main():
             print(f"Let's try again, {name}!")
             break
 
-    if i == 3:
-        print(f'Congratulations, {name}!')
-
-
-if __name__ == '__main__':
-    main()
+    print(congrats(name, i))

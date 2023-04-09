@@ -7,6 +7,7 @@ def greet():
     print(f'Hello, {name}!')
     return name
 
+
 def congrats(name, i):
     if i == 3:
         return f'Congratulations, {name}!'
