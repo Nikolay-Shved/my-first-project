@@ -6,8 +6,8 @@ from brain_games.games.logic import congrats
 def calc_game(name):
     print('What is the result of the expression?')
 
-    i = 0
-    while i < 3:
+    counter = 0
+    while counter < 3:
         operation = ('+-*')
         num1 = random.randint(1, 100)
         num2 = random.randint(1, 100)
@@ -25,10 +25,10 @@ def calc_game(name):
 
         if int(answer) == int(result):
             print('Correct!')
-            i += 1
+            counter += 1
         else:
             print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")
             break
 
-    print(congrats(name, i))
+    print(congrats(name, counter))
