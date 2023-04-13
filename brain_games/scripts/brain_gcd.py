@@ -4,9 +4,9 @@ from brain_games.games.brain_gcd import gcd_game
 
 def main():
     name = greet()
-    i = 0
+    counter = 0
     gcd_game(name)
-    congrats(name, i)
+    congrats(name, counter)
 
 
 if __name__ == '__main__':

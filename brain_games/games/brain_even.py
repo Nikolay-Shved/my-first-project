@@ -20,7 +20,8 @@ def even_game(name):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
+            print(f"'{answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{result}'.")
             break
 
     print(congrats(name, counter))

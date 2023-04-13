@@ -4,9 +4,9 @@ from brain_games.games.brain_calc import calc_game
 
 def main():
     name = greet()
-    i = 0
+    counter = 0
     calc_game(name)
-    congrats(name, i)
+    congrats(name, counter)
 
 
 if __name__ == '__main__':
