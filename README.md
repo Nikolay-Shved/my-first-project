@@ -8,7 +8,7 @@
 ### Клонируем себе репозиторий командой:
 `git clone git@github.com:Nikolay-Shved/my-first-project.git`
 
-### ***Требуемые версии******:
+### ***Требуемые версии***:
 ***
 
 1. python3 = 3.10
