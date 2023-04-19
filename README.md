@@ -3,9 +3,9 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/83e158949d998ac5fd1e/maintainability)](https://codeclimate.com/github/Nikolay-Shved/python-project-49/maintainability)
 
-### `***Начало***`:
+### ***Начало***:
 ***
-git clone git@github.com:Nikolay-Shved/my-first-project.git
+`git clone git@github.com:Nikolay-Shved/my-first-project.git`
 
 ### Требуемые версии:
 ***
@@ -15,11 +15,11 @@ git clone git@github.com:Nikolay-Shved/my-first-project.git
 
 #### Проверьте свою версию коммандой:
 
-python3 -m pip --version
+`python3 -m pip --version`
 
 ### Для обновления использоуйте комманду:
 
-python -m pip install --upgrade pip
+`python -m pip install --upgrade pip`
 
 ### Теперь устрановите poetry:
 
@@ -27,7 +27,7 @@ python -m pip install --upgrade pip
 
 ### И инициализирутйе пакеты коммандой:
 
-poetry init
+`poetry init`
 
 ### Записи тестов игр:
 ***
