@@ -3,7 +3,7 @@ from brain_games.games.logic import congrats
 
 
 def prime_game(name):
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     counter = 0
     while counter < 3:
