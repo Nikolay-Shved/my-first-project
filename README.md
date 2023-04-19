@@ -3,7 +3,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/83e158949d998ac5fd1e/maintainability)](https://codeclimate.com/github/Nikolay-Shved/python-project-49/maintainability)
 
-###    ***Начало***:    
+### `***Начало***`:
 ***
 git clone git@github.com:Nikolay-Shved/my-first-project.git
 
