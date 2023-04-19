@@ -8,7 +8,7 @@ def even_game(name):
     counter = 0
     while counter < 3:
         num = random.randint(1, 100)
-        print(f'Questions: {num}')
+        print(f'Question: {num}')
         if num % 2 == 0:
             result = 'yes'
         else:
