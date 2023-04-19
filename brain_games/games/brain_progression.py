@@ -14,7 +14,7 @@ def progression_game(name):
         for i in range(num1, num2, n):
             numbers.append(i)
         numbers.sort()
-        rundom_number = numbers[random.randint(0, 8)]
+        rundom_number = numbers[random.randint(0, 5)]
         index = numbers.index(rundom_number)
         numbers[index] = '..'
         string = ' '.join(map(str, numbers[0:10]))
