@@ -1,4 +1,13 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/Nikolay-Shved/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Nikolay-Shved/python-project-49/actions)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/83e158949d998ac5fd1e/maintainability)](https://codeclimate.com/github/Nikolay-Shved/python-project-49/maintainability)
+***
+
 ### Начало:
+
+### Описание:
+
 
 #### Проверьте свою версию коммандой:
 
@@ -16,14 +25,6 @@ python -m pip install --upgrade pip
 
 poetry init
 
-
-
-
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Nikolay-Shved/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Nikolay-Shved/python-project-49/actions)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/83e158949d998ac5fd1e/maintainability)](https://codeclimate.com/github/Nikolay-Shved/python-project-49/maintainability)
 
 [Тест первой игры](https://asciinema.org/a/hj8pi8XzZTn99VQ7sQrhU1CYU)
 
