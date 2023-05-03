@@ -1,17 +1,29 @@
+from ..logic import congrats
 import random
 from random import choice
-from ..logic import congrats
-from test import calculation
 
 
-def calculations(result):
-    counter = 3
-    for i in range(counter):
+def calculation():
         OPERATION = '+-*'
         NUM_1 = random.randint(1, 100)
         NUM_2 = random.randint(1, 100)
         NUM_3 = choice(OPERATION)
+        print(f'Question: {NUM_1} {NUM_3} {NUM_2}')
+        if NUM_3 == '+':
+            result = NUM_1 + NUM_2
+            return result
+        elif NUM_3 == '-':
+            result = NUM_1 - NUM_2
+            return result
+        else:
+            result = NUM_1 * NUM_2
+            return result
 
+
+def calc_game(name):
+    counter = 3
+    for i in range(counter):
+        result = calculation()
         answer = input('Your answer: ')
 
         if str(answer) == str(result):
@@ -21,6 +33,4 @@ def calculations(result):
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")
             break
-
-def calc_game(name):
     print(congrats(name, i))

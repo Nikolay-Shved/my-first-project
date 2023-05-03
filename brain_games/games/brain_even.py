@@ -1,5 +1,5 @@
 import random
-from brain_games.games.logic import congrats
+from ..logic import congrats
 
 
 def even_game(name):
@@ -18,6 +18,7 @@ def even_game(name):
 
         if answer == result:
             print('Correct!')
+            i += 1
             
         else:
             print(f"'{answer}' is wrong answer ;(.")

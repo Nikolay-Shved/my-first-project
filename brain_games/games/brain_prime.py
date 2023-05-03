@@ -1,5 +1,5 @@
-import random
-from brain_games.games.logic import congrats
+from ..logic import congrats
+from ..scripts import brain_prime
 
 
 def prime_game(name):
@@ -7,22 +7,12 @@ def prime_game(name):
 
     counter = 3
     for i in range(counter):
-        NUM = random.randint(2, 100)
-        print(f'Question: {NUM}')
-
-        k = 0
-        for inter in range(2, NUM // 2 + 1):
-            if (NUM % inter == 0):
-                k += 1
-        if (k <= 0):
-            result = 'yes'
-        else:
-            result = 'no'
-
+        result = brain_prime.prime_calc()
         answer = input('Your answer: ')
 
-        if answer == result:
+        if answer.lower() == result.lower():
             print('Correct!')
+            i += 1
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")

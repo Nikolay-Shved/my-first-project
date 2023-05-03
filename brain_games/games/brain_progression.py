@@ -1,5 +1,5 @@
 import random
-from brain_games.games.logic import congrats
+from ..logic import congrats
 
 
 def progression_game(name):
@@ -21,7 +21,7 @@ def progression_game(name):
         answer = input('Your answer: ')
         if numbers.index(answer) == numbers.index(index):
             print('Correct!')
-            counter += 1
+            i += 1
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"'Correct answer was '{index}'.")
