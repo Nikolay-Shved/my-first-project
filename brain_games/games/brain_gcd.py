@@ -1,6 +1,6 @@
 import random
 import math
-from brain_games.games.logic import congrats
+from ..logic import congrats
 
 
 def gcd_game(name):
