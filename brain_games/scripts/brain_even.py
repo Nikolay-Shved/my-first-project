@@ -1,5 +1,5 @@
-from brain_games.games.logic import greet, congrats
-from brain_games.games.brain_even import even_game
+from ..logic import greet, congrats
+from ..games.brain_even import even_game
 
 
 def main():

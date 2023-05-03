@@ -16,7 +16,7 @@ def even_game(name):
 
         answer = input('Your answer: ')
 
-        if answer == result:
+        if answer.lower() == result.lower():
             print('Correct!')
             i += 1
             
