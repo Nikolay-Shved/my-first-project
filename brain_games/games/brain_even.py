@@ -1,4 +1,4 @@
-import random
+from ..scripts import brain_even
 from ..logic import congrats
 
 
@@ -7,19 +7,13 @@ def even_game(name):
 
     counter = 3
     for i in range(counter):
-        NUM = random.randint(1, 100)
-        print(f'Question: {NUM}')
-        if NUM % 2 == 0:
-            result = 'yes'
-        else:
-            result = 'no'
-
+        result = brain_even.even()
         answer = input('Your answer: ')
 
         if answer.lower() == result.lower():
             print('Correct!')
             i += 1
-            
+
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")

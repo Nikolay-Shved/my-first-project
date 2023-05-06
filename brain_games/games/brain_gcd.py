@@ -1,5 +1,4 @@
-import random
-import math
+from ..scripts import brain_gcd
 from ..logic import congrats
 
 
@@ -8,13 +7,8 @@ def gcd_game(name):
 
     counter = 3
     for i in range(counter):
-        NUM_1 = random.randint(1, 100)
-        NUM_2 = random.randint(1, 100)
-        print(f'Question: {NUM_1} {NUM_2}')
-
+        result = brain_gcd.gcd()
         answer = input('Your answer: ')
-
-        result = math.gcd(NUM_1, NUM_2)
         if int(result) == int(answer):
             print('Correct!')
             i += 1
