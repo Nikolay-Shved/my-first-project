@@ -34,7 +34,7 @@
 ***
 
 
-[Тест первой игры](https://asciinema.org/a/hj8pi8XzZTn99VQ7sQrhU1CYU)
+[![Тест первой игры](https://asciinema.org/a/577264.svg)](https://asciinema.org/a/577264)
 
 [Тест второй игры](https://asciinema.org/a/ogbc6FcRcF9DseDvDLFhTRIbE)
 
