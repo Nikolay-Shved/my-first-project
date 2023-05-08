@@ -1,20 +1,35 @@
-from ..logic import congrats
-from ..scripts import brain_calc
+from ..scripts.all_game import congrats
+import random
+from random import choice
+
+OPERATIONS = '+-*'
+rundom_number_1 = random.randint(1, 100)
+rundom_number_2 = random.randint(1, 100)
+rundom_operation = choice(OPERATIONS)
 
 
 counter = 3
+def calculation():
+        if rundom_number_1 == '+':
+            result = rundom_number_1 + rundom_number_2
+            return result
+        elif rundom_operation == '-':
+            result = rundom_number_1 - rundom_number_2
+        else:
+            result = rundom_number_1 * rundom_number_2
+            return result
 
 
 def calc_game(name):
     for i in range(counter):
-        result = brain_calc.calculation()
+        print(f'Question: {rundom_number_1} {rundom_operation} {rundom_number_2}')
+        result = calculation()
         answer = input('Your answer: ')
 
-        if str(answer) == str(result):
+        if int(answer) == int(result):
             print('Correct!')
-            i += 1
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")
-            break
-    print(congrats(name, i))
+            return print(f"Let's try again, {name}")
+    congrats(name)

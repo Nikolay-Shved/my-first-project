@@ -10,7 +10,5 @@ def greet():
 
 
 def congrats(name, i):
-    if i == 3:
+    if i == 1:
         return f'Congratulations, {name}!'
-    else:
-        return f"Let's try again, {name}!"

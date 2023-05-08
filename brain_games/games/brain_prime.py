@@ -1,13 +1,11 @@
 import random
-from ..logic import congrats
-
+from ..scripts.all_game import congrats
+rundom_number = random.randint(2, 100)
 
 def prime_calc():
-    NUM = random.randint(2, 100)
-    print(f'Question: {NUM}')
     k = 0
-    for i in range(2, NUM // 2 + 1):
-        if (NUM % i == 0):
+    for i in range(2, rundom_number // 2 + 1):
+        if (rundom_number % i == 0):
             k += 1
         if (k <= 0):
             result = 'yes'
@@ -19,6 +17,7 @@ def prime_calc():
 
 def prime_game(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print(f'Question: {rundom_number}')
 
     counter = 3
     for i in range(counter):
@@ -27,10 +26,9 @@ def prime_game(name):
 
         if answer.lower() == result.lower():
             print('Correct!')
-            i += 1
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")
-            break
+            return print(f"Let's try again, {name}!")
 
-    print(congrats(name, i))
+    congrats(name)
