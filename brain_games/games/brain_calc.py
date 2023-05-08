@@ -9,8 +9,8 @@ rundom_operation = choice(OPERATIONS)
 
 
 counter = 3
-def calculation():
-        if rundom_number_1 == '+':
+def calculation(rundom_number_1, rundom_number_2, rundom_operation):
+        if rundom_operation == '+':
             result = rundom_number_1 + rundom_number_2
             return result
         elif rundom_operation == '-':
@@ -23,7 +23,7 @@ def calculation():
 def calc_game(name):
     for i in range(counter):
         print(f'Question: {rundom_number_1} {rundom_operation} {rundom_number_2}')
-        result = calculation()
+        result = calculation(rundom_number_1, rundom_number_2, rundom_operation)
         answer = input('Your answer: ')
 
         if int(answer) == int(result):

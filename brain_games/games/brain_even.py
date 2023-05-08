@@ -13,10 +13,10 @@ def even():
 
 def even_game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    print(f'Question: {rundom_number}')
 
     counter = 3
     for i in range(counter):
+        print(f'Question: {rundom_number}')
         result = even()
         answer = input('Your answer: ')
 
