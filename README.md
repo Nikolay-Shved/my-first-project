@@ -36,8 +36,10 @@
 
 Тест первой игры: [![asciicast](https://asciinema.org/a/577264.svg)](https://asciinema.org/a/577264)
 
-[Тест третьей игры](https://asciinema.org/a/e23azgMYetvNGlbt95UyOzR9o)
+Тест второй игры: [![asciicast](https://asciinema.org/a/575043.svg)](https://asciinema.org/a/575043)
 
-[Тест четвертой игры](https://asciinema.org/a/zjQVNwkuB58mkCq6mNOK6XEfs)
+Тест третьей игры: [![asciicast](https://asciinema.org/a/575291.svg)](https://asciinema.org/a/575291)
 
-[Тест пятой игры](https://asciinema.org/a/8XJcojT5L4xLW1wL1ROTUkHam)
+Тест четвертой игры: [![asciicast](https://asciinema.org/a/577261.svg)](https://asciinema.org/a/577261)
+
+тест пятой игры: [![asciicast](https://asciinema.org/a/576930.svg)](https://asciinema.org/a/576930)
