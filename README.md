@@ -34,12 +34,12 @@
 ***
 
 
-Тест первой игры: [![asciicast](https://asciinema.org/a/577264.svg)](https://asciinema.org/a/577264)
+### Тест первой игры: [![asciicast](https://asciinema.org/a/577264.svg)](https://asciinema.org/a/577264)
 
-Тест второй игры: [![asciicast](https://asciinema.org/a/575043.svg)](https://asciinema.org/a/575043)
+### Тест второй игры: [![asciicast](https://asciinema.org/a/575043.svg)](https://asciinema.org/a/575043)
 
-Тест третьей игры: [![asciicast](https://asciinema.org/a/575291.svg)](https://asciinema.org/a/575291)
+### Тест третьей игры: [![asciicast](https://asciinema.org/a/575291.svg)](https://asciinema.org/a/575291)
 
-Тест четвертой игры: [![asciicast](https://asciinema.org/a/577261.svg)](https://asciinema.org/a/577261)
+### Тест четвертой игры: [![asciicast](https://asciinema.org/a/577261.svg)](https://asciinema.org/a/577261)
 
-тест пятой игры: [![asciicast](https://asciinema.org/a/576930.svg)](https://asciinema.org/a/576930)
+### Тест пятой игры: [![asciicast](https://asciinema.org/a/576930.svg)](https://asciinema.org/a/576930)
