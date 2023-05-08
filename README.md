@@ -36,7 +36,7 @@
 
 [![Тест первой игры](https://asciinema.org/a/577264.svg)](https://asciinema.org/a/577264)
 
-[Тест второй игры](https://asciinema.org/a/ogbc6FcRcF9DseDvDLFhTRIbE)
+<script async id="asciicast-577264" src="https://asciinema.org/a/577264.js"></script>
 
 [Тест третьей игры](https://asciinema.org/a/e23azgMYetvNGlbt95UyOzR9o)
 
