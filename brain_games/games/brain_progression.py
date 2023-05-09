@@ -1,15 +1,16 @@
 from ..scripts.all_game import congrats
 import random
+NUMBER_1 = 1
+NUMBER_2 = 30
+NUMBER_3 = 80
+NUMBER_4 = 100
+NUMBER_5 = 2
+NUMBER_6 = 10
 
 
-rundom_number_1 = random.randint(1, 30)
-rundom_number_2 = random.randint(80, 100)
-step = random.randint(2, 10)
-
-
-def progression():
+def progression(random_number_1, random_number_2, random_step):
     numbers = []
-    for inter in range(rundom_number_1, rundom_number_2, step):
+    for inter in range(random_number_1, random_number_2, random_step):
         numbers.append(inter)
     index = numbers.index(numbers[random.randint(0, 5)])
     correct_answer = numbers[index]
@@ -23,7 +24,10 @@ def progression_game(name):
 
     counter = 3
     for i in range(counter):
-        correct_answer = progression()
+        random_number_1 = random.randint(NUMBER_1, NUMBER_2)
+        random_number_2 = random.randint(NUMBER_3, NUMBER_4)
+        random_step = random.randint(NUMBER_5, NUMBER_6)
+        correct_answer = progression(random_number_1, random_number_2, random_step)
         answer = input('Your answer: ')
         if int(answer) == int(correct_answer):
             print('Correct!')

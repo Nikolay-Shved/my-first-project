@@ -1,9 +1,12 @@
 from ..scripts.all_game import congrats
 import random
-rundom_number = random.randint(1, 100)
 
-def even():
-    if rundom_number % 2 == 0:
+NUMBER_1 = 1
+NUMBER_2 = 100
+
+
+def even(random_number):
+    if random_number % 2 == 0:
         result = 'yes'
         return result
     else:
@@ -16,8 +19,9 @@ def even_game(name):
 
     counter = 3
     for i in range(counter):
-        print(f'Question: {rundom_number}')
-        result = even()
+        random_number = random.randint(NUMBER_1, NUMBER_2)
+        print(f'Question: {random_number}')
+        result = even(random_number)
         answer = input('Your answer: ')
 
         if answer.lower() == result.lower():

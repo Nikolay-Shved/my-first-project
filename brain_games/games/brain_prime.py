@@ -1,11 +1,13 @@
 import random
 from ..scripts.all_game import congrats
-rundom_number = random.randint(2, 100)
+NUMBER_1 = 2
+NUMBER_2 = 100
 
-def prime_calc():
+
+def prime_calc(random_number):
     k = 0
-    for i in range(2, rundom_number // 2 + 1):
-        if (rundom_number % i == 0):
+    for i in range(2, random_number // 2 + 1):
+        if (random_number % i == 0):
             k += 1
         if (k <= 0):
             result = 'yes'
@@ -17,11 +19,12 @@ def prime_calc():
 
 def prime_game(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    print(f'Question: {rundom_number}')
 
     counter = 3
     for i in range(counter):
-        result = prime_calc()
+        random_number = random.randint(NUMBER_1, NUMBER_2)
+        print(f'Question: {random_number}')
+        result = prime_calc(random_number)
         answer = input('Your answer: ')
 
         if answer.lower() == result.lower():
