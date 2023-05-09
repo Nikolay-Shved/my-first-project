@@ -30,5 +30,5 @@ def even_game(name):
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")
-            return print(f"Let's try again, {name}")
+            return print(f"Let's try again, {name}!")
     congrats(name)
