@@ -21,11 +21,11 @@ def calculation(random_number_1, random_number_2, random_operation):
 def calc_game(name):
     counter = 3
     for i in range(counter):
+        random_number = random.randint(NUMBER_1, NUMBER_2)
         random_number_1 = random.randint(NUMBER_1, NUMBER_2)
-        random_number_2 = random.randint(NUMBER_1, NUMBER_2)
         random_operation = choice(OPERATIONS)
-        print(f'Question: {random_number_1}{random_operation}{random_number_2}')
-        result = calculation(random_number_1, random_number_2, random_operation)
+        print(f'Question: {random_number}{random_operation}{random_number_1}')
+        result = calculation(random_number, random_number_1, random_operation)
         answer = input('Your answer: ')
 
         if int(answer) == int(result):

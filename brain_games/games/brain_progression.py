@@ -8,9 +8,9 @@ NUMBER_5 = 2
 NUMBER_6 = 10
 
 
-def progression(random_number_1, random_number_2, random_step):
+def progression(random_number, random_number_1, step):
     numbers = []
-    for inter in range(random_number_1, random_number_2, random_step):
+    for inter in range(random_number, random_number_1, step):
         numbers.append(inter)
     index = numbers.index(numbers[random.randint(0, 5)])
     correct_answer = numbers[index]
@@ -24,10 +24,10 @@ def progression_game(name):
 
     counter = 3
     for i in range(counter):
-        random_number_1 = random.randint(NUMBER_1, NUMBER_2)
-        random_number_2 = random.randint(NUMBER_3, NUMBER_4)
-        random_step = random.randint(NUMBER_5, NUMBER_6)
-        correct_answer = progression(random_number_1, random_number_2, random_step)
+        random_number = random.randint(NUMBER_1, NUMBER_2)
+        random_number_1 = random.randint(NUMBER_3, NUMBER_4)
+        step = random.randint(NUMBER_5, NUMBER_6)
+        correct_answer = progression(random_number, random_number_1, step)
         answer = input('Your answer: ')
         if int(answer) == int(correct_answer):
             print('Correct!')
