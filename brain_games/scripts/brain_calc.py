@@ -1,4 +1,4 @@
-from ..games.brain_calc import calc_game
+from ..games.brain_calc import script_answer
 import prompt
 
 
@@ -12,7 +12,7 @@ def greet():
 
 def main():
     name = greet()
-    calc_game(name)
+    script_answer(name)
 
 
 if __name__ == '__main__':
