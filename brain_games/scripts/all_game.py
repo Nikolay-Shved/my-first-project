@@ -21,7 +21,7 @@ def script_answer(name, game_body):
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{result}'.")
-            return print(f"Let's try again, {name}")
+            return print(f"Let's try again, {name}!")
     print(f'Congratulations, {name}!')
 
 
