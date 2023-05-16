@@ -1,5 +1,4 @@
 import random
-from ..scripts.all_game import congrats
 NUMBER_1 = 2
 NUMBER_2 = 100
 
@@ -17,7 +16,7 @@ def prime_calc(random_number):
             return result
 
 
-def prime_game(name):
+def game_body():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     counter = 3
@@ -25,13 +24,4 @@ def prime_game(name):
         random_number = random.randint(NUMBER_1, NUMBER_2)
         print(f'Question: {random_number}')
         result = prime_calc(random_number)
-        answer = input('Your answer: ')
-
-        if answer.lower() == result.lower():
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{result}'.")
-            return print(f"Let's try again, {name}!")
-
-    congrats(name)
+        return result

@@ -1,18 +1,10 @@
-from ..games.brain_prime import prime_game
-import prompt
-
-
-def greet():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What is the result of the expression?')
-    return name
+from ..games.brain_prime import game_body
+from .all_game import script_answer_2, greet
 
 
 def main():
     name = greet()
-    prime_game(name)
+    script_answer_2(name, game_body)
 
 
 if __name__ == '__main__':

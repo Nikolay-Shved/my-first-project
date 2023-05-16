@@ -1,5 +1,4 @@
 import random
-import prompt
 from random import choice
 
 OPERATIONS = '+-*'
@@ -7,37 +6,23 @@ NUMBER_1 = 1
 NUMBER_2 = 100
 
 
-def calculation(random_number_1, random_number_2, random_operation):
-    if random_operation == '+':
-        result = random_number_1 + random_number_2
+def calculation(rundom_number_1, rundom_number_2, rundom_operation):
+    if rundom_operation == '+':
+        result = rundom_number_1 + rundom_number_2
         return result
-    elif random_operation == '-':
-        result = random_number_1 - random_number_2
+    elif rundom_operation == '-':
+        result = rundom_number_1 - rundom_number_2
         return result
     else:
-        result = random_number_1 * random_number_2
+        result = rundom_number_1 * rundom_number_2
         return result
 
 
-def calc_game():
-    random_number = random.randint(NUMBER_1, NUMBER_2)
-    random_number_1 = random.randint(NUMBER_1, NUMBER_2)
-    random_operation = choice(OPERATIONS)
-    print(f'Question: {random_number} {random_operation} {random_number_1}')
-    result = calculation(random_number, random_number_1, random_operation)
+def game_body():
+    rundom_number_1 = random.randint(NUMBER_1, NUMBER_2)
+    rundom_number_2 = random.randint(NUMBER_1, NUMBER_2)
+    rundom_operation = choice(OPERATIONS)
+    result = calculation(rundom_number_1, rundom_number_2, rundom_operation)
+    print(f'Question: {rundom_number_1} {rundom_operation} {rundom_number_2}')
     return result
 
-
-def script_answer(name):
-    counter = 3
-    for i in range(counter):
-        result = calc_game()
-        answer = prompt.string('Your answer: ')
-
-        if int(answer) == int(result):
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{result}'.")
-            return print(f"Let's try again, {name}")
-    print(f'Congratulations, {name}!')

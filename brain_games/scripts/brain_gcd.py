@@ -1,18 +1,13 @@
-from ..games.brain_gcd import gcd_game
-import prompt
+from ..games.brain_gcd import game_body
+from .all_game import script_answer, greet
 
 
-def greet():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What is the result of the expression?')
-    return name
+
 
 
 def main():
     name = greet()
-    gcd_game(name)
+    script_answer(name, game_body)
 
 
 if __name__ == '__main__':

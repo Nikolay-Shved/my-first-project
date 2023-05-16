@@ -1,11 +1,10 @@
-from ..scripts.all_game import congrats
 import random
 import math
 NUMBER_1 = 1
 NUMBER_2 = 100
 
 
-def gcd_game(name):
+def game_body():
     print('Find the greatest common divisor of given numbers.')
 
     counter = 3
@@ -14,11 +13,4 @@ def gcd_game(name):
         random_number_2 = random.randint(NUMBER_1, NUMBER_2)
         print(f'Question: {random_number_1} {random_number_2}')
         result = math.gcd(random_number_1, random_number_2)
-        answer = input('Your answer: ')
-        if int(result) == int(answer):
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{result}'.")
-            return print(f"Let's try again, {name}")
-    congrats(name)
+        return result

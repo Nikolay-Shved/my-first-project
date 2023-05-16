@@ -1,4 +1,3 @@
-from ..scripts.all_game import congrats
 import random
 NUMBER_1 = 1
 NUMBER_2 = 30
@@ -20,20 +19,12 @@ def progression(random_number, random_number_1, step):
     return correct_answer
 
 
-def progression_game(name):
+def game_body():
 
     counter = 3
     for i in range(counter):
         random_number = random.randint(NUMBER_1, NUMBER_2)
         random_number_1 = random.randint(NUMBER_3, NUMBER_4)
         step = random.randint(NUMBER_5, NUMBER_6)
-        correct_answer = progression(random_number, random_number_1, step)
-        answer = input('Your answer: ')
-        if int(answer) == int(correct_answer):
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(.")
-            print(f"'Correct answer was '{correct_answer}'.")
-            return print(f"Let's try again, {name}!")
-
-    congrats(name)
+        result = progression(random_number, random_number_1, step)
+        return result
