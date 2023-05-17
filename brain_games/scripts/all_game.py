@@ -1,19 +1,17 @@
 import prompt
 
 
-
-def greet():
+def game_loop(greet, game_body):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('What is the result of the expression?')
     print(f'Hello, {name}!')
-    return name
-
-
-def script_answer(name, game_body):
+    greet = greet()
+    print(greet)
+    
     counter = 3
     for i in range(counter):
-        result = game_body()
+        question, result = game_body()
+        print(question)
         answer = prompt.string('Your answer: ')
 
         if int(answer) == int(result):
@@ -25,7 +23,11 @@ def script_answer(name, game_body):
     print(f'Congratulations, {name}!')
 
 
-def script_answer_2(name, game_body):
+def game_loop_2(name, game_body):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    
     counter = 3
     for i in range(counter):
         result = game_body()

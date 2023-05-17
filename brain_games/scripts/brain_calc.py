@@ -1,9 +1,14 @@
-from ..scripts.all_game import script_answer, greet
+from .all_game import game_loop
 from ..games.brain_calc import game_body
+import prompt
+
 
 def main():
-    name = greet()
-    script_answer(name, game_body)
+    game_loop(greet, game_body)
+
+
+def greet():
+    return 'What is the result of the expression?'
 
 
 if __name__ == '__main__':
