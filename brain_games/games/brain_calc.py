@@ -1,6 +1,5 @@
 import random
 from random import choice
-
 OPERATIONS = '+-*'
 SEQUENCE_ELEMENT_1 = 1
 SEQUENCE_ELEMENT_2 = 100
