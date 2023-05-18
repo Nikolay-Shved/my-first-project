@@ -1,13 +1,13 @@
 import random
-NUMBER_1 = 1
-NUMBER_2 = 30
-NUMBER_3 = 80
-NUMBER_4 = 100
-NUMBER_5 = 2
-NUMBER_6 = 10
+FIRST_SEQUENCE_1 = 1
+FIRST_SEQUENCE_2 = 30
+SECOND_SEQUENCE_1 = 80
+SECOND_SEQUENCE_2 = 100
+THIRD_SEQUENCE_1 = 2
+THIRD_SEQUENCE_2 = 10
 
 
-def progression(random_number, random_number_1, step):
+def progression_game(random_number, random_number_1, step):
     numbers = []
     for inter in range(random_number, random_number_1, step):
         numbers.append(inter)
@@ -15,16 +15,12 @@ def progression(random_number, random_number_1, step):
     correct_answer = numbers[index]
     numbers[index] = '..'
     string = ' '.join(map(str, numbers))
-    print(f'Question: {string}')
-    return correct_answer
+    return correct_answer, string
 
 
 def game_body():
-
-    counter = 3
-    for i in range(counter):
-        random_number = random.randint(NUMBER_1, NUMBER_2)
-        random_number_1 = random.randint(NUMBER_3, NUMBER_4)
-        step = random.randint(NUMBER_5, NUMBER_6)
-        result = progression(random_number, random_number_1, step)
-        return result
+    random_number = random.randint(FIRST_SEQUENCE_1, FIRST_SEQUENCE_2)
+    random_number_1 = random.randint(SECOND_SEQUENCE_1, SECOND_SEQUENCE_2)
+    step = random.randint(THIRD_SEQUENCE_1, THIRD_SEQUENCE_2)
+    result, string = progression_game(random_number, random_number_1, step)
+    return f'Question: {string}', result

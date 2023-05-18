@@ -1,11 +1,14 @@
 from ..games.brain_progression import game_body
-from ..scripts.all_game import script_answer, greet
-
+from ..scripts.all_game import game_loop
 
 
 def main():
-    name = greet()
-    script_answer(name, game_body)
+    condition = game_condition()
+    game_loop(condition, game_body)
+
+
+def game_condition():
+    return "What number is missing in the progression?"
 
 
 if __name__ == '__main__':
