@@ -12,7 +12,6 @@ def calculate(first_number):
 def get_question_and_answer():
     first_number = random.randint(START_SEQUENCE, END_SEQUENCE)
     correct_answer = calculate(first_number)
-    print(correct_answer)
     if correct_answer == True:
         correct_answer = 'yes'
     else:

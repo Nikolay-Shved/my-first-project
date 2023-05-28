@@ -10,9 +10,7 @@ def calculate(first_number):
         if (first_number % i == 0):
             k += 1
         if (k <= 0):
-            return 
-        else:
-            return 
+            return True
 
 
 def get_question_and_answer():
