@@ -8,9 +8,9 @@ END_SEQUENCE_3 = 10
 GAME_QUESTION = "What number is missing in the progression?"
 
 
-def calculate(start_of_sequence, end_of_sequence, step):
+def calculate(first_number, second_number, step):
     numbers = []
-    for inter in range(start_of_sequence, end_of_sequence, step):
+    for inter in range(first_number, second_number, step):
         numbers.append(inter)
     index = numbers.index(numbers[random.randint(0, 5)])
     correct_answer = numbers[index]
