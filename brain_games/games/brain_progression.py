@@ -24,4 +24,4 @@ def get_question_and_answer():
     second_number = random.randint(START_SEQUENCE_2, END_SEQUENCE_2)
     step = random.randint(START_SEQUENCE_3, END_SEQUENCE_3)
     correct_answer, progression_string = calculate(first_number, second_number, step)
-    return f'{correct_answer}', progression_string
+    return f'{progression_string}', correct_answer
