@@ -1,14 +1,10 @@
-from ..games.brain_even import game_body
-from .all_game import game_loop_2
+from ..games.brain_even import get_question_and_answer, GAME_QUESTION
+from ..all_game import game_loop
 
 
 def main():
-    condition = game_condition()
-    game_loop_2(condition, game_body)
+    game_loop(GAME_QUESTION, get_question_and_answer)
 
-
-def game_condition():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 if __name__ == '__main__':

@@ -1,14 +1,9 @@
-from ..games.brain_prime import game_body
-from .all_game import game_loop_2
+from ..games.brain_prime import get_question_and_answer, GAME_QUESTION
+from ..all_game import game_loop
 
 
 def main():
-    condition = game_condition()
-    game_loop_2(condition, game_body)
-
-
-def game_condition():
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    game_loop(GAME_QUESTION, get_question_and_answer)
 
 
 if __name__ == '__main__':

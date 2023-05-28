@@ -1,11 +1,12 @@
 import random
 import math
-SEQUENCE_ELEMENT_1 = 1
-SEQUENCE_ELEMENT_2 = 100
+START_SEQUENCE = 1
+END_SEQUENCE = 100
+GAME_QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
-def game_body():
-    random_number_1 = random.randint(SEQUENCE_ELEMENT_1, SEQUENCE_ELEMENT_2)
-    random_number_2 = random.randint(SEQUENCE_ELEMENT_1, SEQUENCE_ELEMENT_2)
-    result = math.gcd(random_number_1, random_number_2)
-    return f'Question: {random_number_1} {random_number_2}', result
+def get_question_and_answer():
+    first_number = random.randint(START_SEQUENCE, END_SEQUENCE)
+    second_number = random.randint(START_SEQUENCE, END_SEQUENCE)
+    correct_answer = math.gcd(first_number, second_number)
+    return f'{first_number} {second_number}', correct_answer

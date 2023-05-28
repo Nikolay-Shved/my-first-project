@@ -1,26 +1,27 @@
 import random
-FIRST_SEQUENCE_1 = 1
-FIRST_SEQUENCE_2 = 30
-SECOND_SEQUENCE_1 = 80
-SECOND_SEQUENCE_2 = 100
-THIRD_SEQUENCE_1 = 2
-THIRD_SEQUENCE_2 = 10
+START_SEQUENCE_1 = 1
+END_SEQUENCE_1 = 30
+START_SEQUENCE_2 = 80
+END_SEQUENCE_2 = 100
+START_SEQUENCE_3 = 2
+END_SEQUENCE_3 = 10
+GAME_QUESTION = "What number is missing in the progression?"
 
 
-def progression_game(random_number, random_number_1, step):
+def calculate(start_of_sequence, end_of_sequence, step):
     numbers = []
-    for inter in range(random_number, random_number_1, step):
+    for inter in range(start_of_sequence, end_of_sequence, step):
         numbers.append(inter)
     index = numbers.index(numbers[random.randint(0, 5)])
     correct_answer = numbers[index]
     numbers[index] = '..'
-    string = ' '.join(map(str, numbers))
-    return correct_answer, string
+    progression_string = ' '.join(map(str, numbers))
+    return correct_answer, progression_string
 
 
-def game_body():
-    random_number = random.randint(FIRST_SEQUENCE_1, FIRST_SEQUENCE_2)
-    random_number_1 = random.randint(SECOND_SEQUENCE_1, SECOND_SEQUENCE_2)
-    step = random.randint(THIRD_SEQUENCE_1, THIRD_SEQUENCE_2)
-    result, string = progression_game(random_number, random_number_1, step)
-    return f'Question: {string}', result
+def get_question_and_answer():
+    first_number = random.randint(START_SEQUENCE_1, END_SEQUENCE_1)
+    second_number = random.randint(START_SEQUENCE_2, END_SEQUENCE_2)
+    step = random.randint(START_SEQUENCE_3, END_SEQUENCE_3)
+    correct_answer, progression_string = calculate(first_number, second_number, step)
+    return f'{correct_answer}', progression_string

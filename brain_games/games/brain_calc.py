@@ -1,26 +1,26 @@
 import random
 from random import choice
 OPERATIONS = '+-*'
-SEQUENCE_ELEMENT_1 = 1
-SEQUENCE_ELEMENT_2 = 100
+START_SEQUENCE = 1
+END_SEQUENCE = 100
+GAME_QUESTION = 'What is the result of the expression?'
 
 
-def calc_game(rundom_number_1, rundom_number_2, rundom_operation):
-    if rundom_operation == '+':
-        result = rundom_number_1 + rundom_number_2
-        return result
-    elif rundom_operation == '-':
-        result = rundom_number_1 - rundom_number_2
-        return result
+def calculate(start_of_sequence, end_of_sequence, operation):
+    if operation == '+':
+        correct_answer = start_of_sequence + end_of_sequence
+        return correct_answer
+    elif operation == '-':
+        correct_answer = start_of_sequence - end_of_sequence
+        return correct_answer
     else:
-        result = rundom_number_1 * rundom_number_2
-        return result
+        correct_answer = start_of_sequence * end_of_sequence
+        return correct_answer
 
 
-def game_body():
-    rundom_number_1 = random.randint(SEQUENCE_ELEMENT_1, SEQUENCE_ELEMENT_2)
-    rundom_number_2 = random.randint(SEQUENCE_ELEMENT_1, SEQUENCE_ELEMENT_2)
-    rundom_operation = choice(OPERATIONS)
-    result = calc_game(rundom_number_1, rundom_number_2, rundom_operation)
-    return (f'Question: {rundom_number_1} {rundom_operation} {rundom_number_2}',
-            result)
+def get_question_and_answer():
+    first_number = random.randint(START_SEQUENCE, END_SEQUENCE)
+    second_number = random.randint(START_SEQUENCE, END_SEQUENCE)
+    operation = choice(OPERATIONS)
+    correct_answer = calculate(first_number, second_number , operation)
+    return (f'{first_number} {operation} {second_number }', correct_answer)

@@ -1,57 +1,30 @@
 import prompt
+COUNTER = 3
+
 
 def greet():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print('What is the result of the expression?')
     return name
 
 
-def congrats(name, i):
-    if i == 1:
-        return f'Congratulations, {name}!'
-
-
-
-def game_loop(condition, game_body):
+def game_loop(GAME_QUESTION, get_question_and_answer):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(condition)
+    print(GAME_QUESTION)
 
-    counter = 3
-    for i in range(counter):
-        question, result = game_body()
-        print(question)
+    for i in range(COUNTER):
+        question, correct_answer = get_question_and_answer()
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
 
-        if int(answer) == int(result):
+        if str(answer.lower()) == str(correct_answer):
             print('Correct!')
+
         else:
             print(f"'{answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{result}'.")
+            print(f"Correct answer was '{correct_answer}'.")
             return print(f"Let's try again, {name}!")
     print(f'Congratulations, {name}!')
-
-
-def game_loop_2(condition, game_body):
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print(condition)
-
-    counter = 3
-    for i in range(counter):
-        question, result = game_body()
-        print(question)
-        answer = prompt.string('Your answer: ')
-
-        if answer.lower() == result.lower():
-            print('Correct!')
-
-        else:
-            print(f"'{answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{result}'.")
-            return print(f"Let's try again, {name}!")
-        print(f'Congratulations, {name}!')
