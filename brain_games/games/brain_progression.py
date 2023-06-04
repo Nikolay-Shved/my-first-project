@@ -15,13 +15,13 @@ def calculate(first_number, second_number, step):
     index = numbers.index(numbers[random.randint(0, 5)])
     correct_answer = numbers[index]
     numbers[index] = '..'
-    progression_string = ' '.join(map(str, numbers))
-    return correct_answer, progression_string
+    string = ' '.join(map(str, numbers))
+    return correct_answer, string
 
 
 def get_question_and_answer():
     first_number = random.randint(START_SEQUENCE_1, END_SEQUENCE_1)
     second_number = random.randint(START_SEQUENCE_2, END_SEQUENCE_2)
     step = random.randint(START_SEQUENCE_3, END_SEQUENCE_3)
-    correct_answer, progression_string = calculate(first_number, second_number, step)
-    return f'{progression_string}', correct_answer
+    correct_answer, string = calculate(first_number, second_number, step)
+    return f'{string}', correct_answer

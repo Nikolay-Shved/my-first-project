@@ -6,6 +6,5 @@ def main():
     game_loop(GAME_QUESTION, get_question_and_answer)
 
 
-
 if __name__ == '__main__':
     main()
