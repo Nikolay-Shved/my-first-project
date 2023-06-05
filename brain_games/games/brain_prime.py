@@ -16,6 +16,6 @@ def is_prime(first_number):
 
 def get_question_and_answer():
     first_number = random.randint(START_SEQUENCE, END_SEQUENCE)
-    correct_answer = calculate(first_number)
-    correct_answer = 'yes' if calculate(first_number) else 'no'
+    correct_answer = is_prime(first_number)
+    correct_answer = 'yes' if is_prime(first_number) else 'no'
     return f'{first_number}', correct_answer
