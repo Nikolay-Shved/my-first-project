@@ -20,11 +20,9 @@ def game_loop(GAME_QUESTION, get_question_and_answer):
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
 
-        if str(answer.lower()) == str(correct_answer):
-            print('Correct!')
-
-        else:
+        if str(answer.lower()) != str(correct_answer):
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{correct_answer}'.")
             return print(f"Let's try again, {name}!")
+        print('Correct!')
     print(f'Congratulations, {name}!')

@@ -5,7 +5,7 @@ END_SEQUENCE = 100
 GAME_QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def calculate(first_number):
+def is_prime(first_number):
     if first_number < 2:
         return False
     for i in range(2, int(math.sqrt(first_number)) + 1):
