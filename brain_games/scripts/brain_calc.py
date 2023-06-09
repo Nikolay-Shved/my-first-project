@@ -1,5 +1,5 @@
-from ..all_game import game_loop
-from ..games.brain_calc import get_question_and_answer, GAME_QUESTION
+from brain_games.all_game import game_loop
+from brain_games.games.brain_calc import get_question_and_answer, GAME_QUESTION
 
 
 def main():
