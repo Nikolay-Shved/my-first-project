@@ -14,10 +14,6 @@
 1. python3 = 3.10
 2. poetry = 1.4.0
 
-### Проверьте свою версию коммандой:
-
-`python3 -m pip --version`
-
 ### Для обновления использоуйте комманду:
 
 `python -m pip install --upgrade pip`

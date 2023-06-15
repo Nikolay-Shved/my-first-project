@@ -8,14 +8,11 @@ GAME_QUESTION = 'What is the result of the expression?'
 
 def calculate(first_number, second_number, operation):
     if operation == '+':
-        correct_answer = first_number + second_number
-        return correct_answer
+        return first_number + second_number
     elif operation == '-':
-        correct_answer = first_number - second_number
-        return correct_answer
+        return first_number - second_number
     else:
-        correct_answer = first_number * second_number
-        return correct_answer
+        return first_number * second_number
 
 
 def get_question_and_answer():
